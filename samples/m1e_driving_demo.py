@@ -41,7 +41,7 @@ def main():
     left_motor = ev3.LargeMotor(ev3.OUTPUT_B)
     right_motor = ev3.LargeMotor(ev3.OUTPUT_C)
 
-    # Check that the motors are actually connected
+    # Check that the motors are actually connected if they are not it wont run
     assert left_motor.connected
     assert right_motor.connected
 
